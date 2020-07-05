@@ -1,1 +1,1 @@
-# javascript-vault
+# javascript-snippets
