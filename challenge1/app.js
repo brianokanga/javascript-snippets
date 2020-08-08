@@ -81,9 +81,9 @@
 		this.displayScore(sc);
 	};
 
-	Question.prototype.displayScore = function (score) {
-		console.log(`Your current score is ${score}`);
-		console.log(`=================================`);
+	Question.prototype.displayScore = function (keepScore) {
+		console.log('Your current score is: ' + score);
+		console.log('=================================');
 	};
 
 	//instantiate object with arguments
@@ -93,7 +93,7 @@
 		'What the name of the tutor',
 		['John', 'Michael', 'Jonas'],
 		2
-	);
+	);2
 
 	let q3 = new Question(
 		'What the best way to discribe coding?',
@@ -101,7 +101,7 @@
 		2
 	);
 
-	//store the questions in an array and select randomly
+	//store the questions in an array and select randomlys
 	let questions = [q1, q2, q3];
 
 	function score() {
@@ -110,7 +110,7 @@
 			if (correct) {
 				sc++;
 			}
-			return score;
+			return sc;
 		};
 	}
 
@@ -123,7 +123,7 @@
 
 		let answer = prompt('Please enter the correct answer..');
 
-		//repeat the game
+		//repeat the game or exit
 		if (answer !== 'exit') {
 			questions[n].checkAnswer(parseInt(answer), keepScore);
 
