@@ -15,5 +15,17 @@ roundScore = 0;
 activePlayer = 0;
 
 // Rondom number Generation
-dice = Math.floor(Math.random() * 6) + 1;
-console.log(dice);
+dice = Math.floor (Math.random () * 6) + 1;
+console.log (dice);
+
+//changing markup (setters)
+document.querySelector ('#current-' + activePlayer).textContent = dice;
+// document.querySelector('#current-' + activePlayer).innerHTML =
+// 	'<strong>' + dice + '</strong>';
+
+//selecting a markup content  (getter)
+var x = document.querySelector ('#score-0').textContent;
+console.log (x);
+
+//changing CSS styles
+document.querySelector ('.dice').style.display = 'none';
