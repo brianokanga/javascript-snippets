@@ -22,3 +22,4 @@ function outer() {
 }
 
 console.log(inner);
+ 
